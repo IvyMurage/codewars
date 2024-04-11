@@ -20,6 +20,11 @@ function isPangram1(string) {
   );
 
   function isPangram2(string) {
+    paragraph
+      .toLowerCase()
+      .match(regex)
+      .every((x) => "abcdefghijklmnopqrstvuwxyz".includes(x));
+
     return "abcdefghijklmnopqrstuvwxyz"
       .split("")
       .every((x) => string.toLowerCase().includes(x));
@@ -27,3 +32,4 @@ function isPangram1(string) {
 }
 
 console.log(isPangram1("The quick brown fox jumps over the lazy dog.")); // true
+console.log(isPangram2("The quick brown fox jumps over the lazy cat.")); // false
