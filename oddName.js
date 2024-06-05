@@ -12,3 +12,6 @@ function findOddNames(list) {
         0 && developer
   );
 }
+let greeting = "hello";
+grwting = {};
+console.log(global.grwting);
