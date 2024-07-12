@@ -6,8 +6,8 @@ const vowels = {
   o: 4,
   u: 5,
 };
-export function encode(string: string): string {
-  return string
+export function encode(characters: string): string {
+  return characters
     .split("")
     .map((character) =>
       character in vowels
@@ -18,8 +18,8 @@ export function encode(string: string): string {
 }
 
 // turn numbers back into vowels
-export function decode(string: string): string {
-  return string
+export function decode(character: string): string {
+  return character
     .split("")
     .map((character) =>
       !isNaN(Number(character))
